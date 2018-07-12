@@ -90,11 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .right {
-    top: 5rem;
-    padding-top: 3rem;
-  }
+@media only screen and (max-width: 700px) {
   .background a .img-mobile{
     height: 2rem;
     align-content: flex-end;
@@ -102,6 +98,15 @@
     right: 0;
     display: block;
   }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .right {
+    top: 2rem;
+    padding-top: 3rem;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -177,6 +182,7 @@ text-align: center;
 @media only screen and (max-width: 790px) {
   .title {
     max-width: 50%;
+    padding-top: 2rem;
   }
 }
 
@@ -223,7 +229,7 @@ span {
     max-width: 100%;
     text-align: center;
 
-    padding: 3.5rem 1rem 0 1rem;
+    padding: 5rem 1rem 0 1rem;
   }
 }
 
@@ -270,7 +276,7 @@ span {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .rsvp {
     width: 100%;
     flex-direction: column;
