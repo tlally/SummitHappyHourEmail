@@ -78,7 +78,7 @@
     padding: 1rem;
 
   }
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 830px) {
   .container {
     width: 100%;
     left:0;
@@ -179,7 +179,7 @@ text-align: center;
 
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 830px) {
   .title {
     max-width: 50%;
     padding-top: 2rem;
@@ -218,7 +218,7 @@ span {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 830px) {
   .content {
     max-width: 40%;
   }
@@ -345,7 +345,7 @@ span {
   line-height: 1.2;
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 830px) {
   .floating-box {
     width: 70%;
     margin-right: 0;
