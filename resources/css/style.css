@@ -56,6 +56,10 @@
 
   }
 
+  .background a .img-mobile{
+    display: none;
+  }
+
   .background {
     max-width: 960px;
     height: auto;
@@ -90,6 +94,13 @@
   .right {
     top: 5rem;
     padding-top: 3rem;
+  }
+  .background a .img-mobile{
+    height: 2rem;
+    align-content: flex-end;
+    position: absolute;
+    right: 0;
+    display: block;
   }
 }
 
@@ -212,7 +223,14 @@ span {
     max-width: 100%;
     text-align: center;
 
-    padding: 5.5rem 1rem 0 1rem;
+    padding: 3.5rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+
+    padding: 1rem 1rem 0 1rem;
   }
 }
 
@@ -229,7 +247,7 @@ span {
   justify-content: flex-end;
   max-width: 100%;
   max-height: auto;
-  padding: 0;
+  padding: 1rem 0 0 0;
   margin: 0;
 }
 
@@ -318,6 +336,7 @@ span {
 .where-when .info {
   width: 70%;
   padding-right: 1rem;
+  line-height: 1.2;
 }
 
 @media only screen and (max-width: 790px) {
@@ -348,23 +367,26 @@ span {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2.75rem;
 }
 
 .footer img {
   max-height: 2.7rem;
+  align-items: baseline;
 }
 
 .sponsors {
   display: flex;
   flex-direction: column;
-  opacity: 0.4
+  opacity: 0.4;
+  width: 45%;
 }
 
 .logo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 1rem;
 }
 
 .logo img{
@@ -376,19 +398,14 @@ span {
 .gpug {
   width: 55%;
   display: flex;
-  align-items: flex-start:
+  align-items: baseline;
 }
 
 .gpug img {
-  ;
+  padding: 1rem 1rem 0 2rem;
+  height: 3rem;
 }
 
-.gpug .img-mobile {
-  display: none;
-}
-.sponsors {
-  width: 45%;
-}
 
 .powered {
   text-align: center;
@@ -409,7 +426,7 @@ span {
 
 .sponsors {
   width: 100%;
-  padding: .5rem;
+  padding-top: .5rem;
   background-color: rgba(101, 175, 175, 0.5);
 }
 
@@ -417,7 +434,7 @@ span {
   display: none;
 }
 
-.gpug .img-mobile {
+a .img-mobile {
   display: block;
   padding: 1rem;
 }
