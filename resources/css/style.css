@@ -253,18 +253,20 @@ span {
   justify-content: flex-end;
   max-width: 100%;
   max-height: auto;
-  padding: 1rem 0 0 0;
+  padding: 0 0 0 0;
   margin: 0;
+  align-items: center;
 }
 
-.img {
-  margin-top: -2rem;
-}
 .img img{
   max-width: 9rem;
   height: auto;
   padding: 0;
   margin: 0;
+}
+.rsvp .call {
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 700px){
@@ -288,12 +290,13 @@ span {
   .rsvp .call {
     text-align: center;
     font-size: 1.25rem;
+    align-content: center;
   }
 
   .img img {
     justify-content:center;
     max-width: 11rem;
-    padding-top: .5rem;
+    margin: -1rem 0 -1rem 0;
 
   }
 }
