@@ -46,7 +46,7 @@
   .right {
     position: absolute;
     right: .5rem;
-    top: 2rem;
+    top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -254,7 +254,7 @@ span {
   max-width: 100%;
   max-height: auto;
   padding: 0 0 0 0;
-  margin: 0;
+  margin: 0 0 0 0;
   align-items: center;
 }
 
@@ -262,7 +262,7 @@ span {
   max-width: 9rem;
   height: auto;
   padding: 0;
-  margin: 0;
+  margin: -1rem 0;
 }
 .rsvp .call {
   text-align: center;
@@ -377,7 +377,7 @@ span {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
 
 .footer img {
@@ -408,7 +408,7 @@ span {
 .gpug {
   width: 55%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .gpug img {

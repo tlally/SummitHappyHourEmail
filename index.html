@@ -1,103 +1,626 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="./resources/css/reset.css">
-    <link rel="stylesheet" href="./resources/css/style.css">
 
-  </head>
-  <body>
-    <div class="background">
-      <a class=""href="https://www.gpugsummit.com/home"><img class="img-mobile" src="./resources/images/summit red blue.svg" alt="summit logo"></a>
-      <div class="right">
-        <div class="container">
-          <div class="title">
-            <h1>How Will You Spend Your Spare Time at Summit 2018?</h1>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<!-- Turned Off Style Sheet
+  <link rel="stylesheet" href="./resources/css/reset.css">
+
+  <link rel="stylesheet" href="./resources/css/style.css">
+
+  -->
+<style media="screen">
+  /* CSS Reset */
+  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+</style>
+<style media="screen">
+/* Universal Styles */
+  html {
+    font-family: "Open Sans", sans-serif;
+    align-content: center;
+    font-size: 14pt;
+    align-items: center;
+    line-height: 1.4;
+    width: 100%;
+    text-align: right;
+
+
+
+  }
+
+  @media only screen and (max-width: 975px) {
+
+  }
+
+  body{
+    max-width: 960px;
+    height: auto;
+    background-image: url("https://i.imgur.com/Eew0fCS.jpg");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+  }
+/*
+  div {
+    border: 1px solid black;
+  }
+*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+    position: relative;
+    right: 0;
+
+
+  }
+
+  .right {
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: auto;
+    width: 100%;
+    align-items: flex-end;
+
+  }
+
+  .background a .img-mobile{
+    display: none;
+  }
+
+  .background {
+    max-width: 960px;
+    height: auto;
+    background-image: url("../Email IMages/background image 2.png");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+  h1 {
+    font-size: 2rem;
+    font-family: lobster;
+    color: rgb(163, 10, 0);
+    padding: 1rem;
+
+  }
+@media only screen and (max-width: 830px) {
+  .container {
+    width: 100%;
+    left:0;
+  }
+
+  .right {
+    right: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .background a .img-mobile{
+    height: 2rem;
+    align-content: flex-end;
+    position: absolute;
+    right: 0;
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+  .right {
+    top: 2rem;
+    padding-top: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .right {
+    top: 11rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .right {
+    top: 10rem;
+  }
+}
+
+/* Fonts */
+@font-face {
+font-family: 'Lobster';
+font-style: normal;
+font-weight: 400;
+src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+font-family: 'Open Sans';
+font-style: italic;
+font-weight: 400;
+src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v15/mem6YaGs126MiZpBA-UFUK0Zdc1GAK6b.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 300;
+src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhpKKSTjw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Title */
+
+.title {
+display: flex;
+justify-content: flex-end;
+width: 100%;
+text-align: center;
+}
+
+@media only screen and (max-width: 975px) {
+  .title {
+    max-width: 90%;
+
+  }
+
+}
+
+@media only screen and (max-width: 830px) {
+  .title {
+    max-width: 50%;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+/* Content */
+.content {
+  max-width: 70%;
+  justify-content: flex-end;
+  padding-left: 20%;
+  padding: 1rem 1rem 0 1rem;
+
+}
+
+
+span {
+  color: rgb(101, 175, 175);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 830px) {
+  .content {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .content {
+    max-width: 100%;
+    text-align: center;
+
+    padding: 5rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content {
+    padding-top: .5rem;
+  }
+}
+
+/* Call to Action */
+.rsvp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  max-width: 100%;
+  max-height: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  align-items: center;
+}
+
+.img img{
+  max-width: 9rem;
+  height: auto;
+  padding: 0;
+  margin: -1rem 0;
+}
+.rsvp .call {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 700px){
+
+  .rsvp {
+    padding-top: 1rem;
+
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .rsvp {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .rsvp .call {
+    text-align: center;
+    font-size: 1.25rem;
+    align-content: center;
+  }
+
+  .img img {
+    justify-content:center;
+    max-width: 11rem;
+    margin: -1rem 0 -1rem 0;
+
+  }
+}
+/* Info Box */
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.floating-box {
+  background-color: rgba(101, 175, 175, 0.5 );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 60%;
+  border-radius: 25px;
+  border: 2px solid rgba(163, 10, 0, 0.5);
+  margin-right: 1rem;
+}
+
+.where-when {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .5rem;
+}
+
+.where-when h2 {
+  width: 25%;
+  font-family: lobster;
+  color: rgb(163, 10, 0);
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+.where-when h4 {
+  color: white;
+  font-weight: 600;
+}
+
+.where-when p {
+  font-style: italic;
+}
+
+.where-when .info {
+  width: 70%;
+  padding-right: 1rem;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 830px) {
+  .floating-box {
+    width: 70%;
+    margin-right: 0;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .box {
+    justify-content: center;
+  }
+
+  .where-when h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .floating-box {
+      width: 90%;
+  }
+}
+
+/* Sponsors */
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 3.75rem;
+}
+
+.footer img {
+  max-height: 2.7rem;
+  align-items: baseline;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.4;
+  width: 45%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.logo img{
+  height: 3rem;
+
+
+}
+
+.gpug {
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+
+.gpug img {
+  padding: 1rem 1rem 0 2rem;
+  height: 3rem;
+}
+
+
+.powered {
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: lobster;
+  color: rgb(163, 10, 0);
+}
+
+@media only screen and (max-width: 975px) {
+.footer {
+  flex-direction: column;
+}
+
+.gpug {
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsors {
+  width: 100%;
+  padding-top: .5rem;
+  background-color: rgba(101, 175, 175, 0.5);
+}
+
+.img-full {
+  display: none;
+}
+
+a .img-mobile {
+  display: block;
+  padding: 1rem;
+}
+
+.powered {
+  padding-bottom: .5rem;
+}
+}
+
+@media only screen and (max-width: 450px) {
+  .logo img{
+    height: 2rem;
+
+
+  }
+}
+
+</style>
+</head>
+
+<body>
+  <div class="background">
+    <a class="" href="https://www.gpugsummit.com/home"><img class="img-mobile" src="./resources/images/summit red blue.svg" alt="summit logo"></a>
+    <div class="right">
+      <div class="container">
+        <div class="title">
+          <h1>How Will You Spend Your Spare Time at Summit 2018?</h1>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="container">
+        <div class="content">
+          <p>You are invited to a <span>Manufacturing and Supply Chain Management Happy Hour</span> at <span>Lucky Strike.</span></p>
+          <br>
+          <p>Come roll with us as we mix, mingle, and network with professionals from your industry while enjoying everything Summit ‘18 has to offer.</p>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="container">
+        <div class="rsvp">
+          <div class="call">
+            <span>Don’t Strike Out!</span>
+
+          </div>
+          <div class="img">
+            <a href="https://www.eventbrite.com/e/rock-bowl-with-ktl-solutions-fascor-and-stock-iq-tickets-48040440250"><img src="https://www.ktlsolutions.com/wp-content/uploads/2018/07/RSVP@72x.png" alt="RSVP"></a>
+
           </div>
         </div>
-          <!-- Content -->
-          <div class="container">
-            <div class="content">
-              <p>You are invited to a <span>Manufacturing and Supply Chain Management Happy Hour</span> at <span>Lucky Strike.</span></p>
-              <br>
-              <p>Come roll with us as we mix, mingle, and network with professionals from your industry while enjoying everything Summit ‘18 has to offer.</p>
-            </div>
-          </div>
-
-          <!-- Call to Action -->
-          <div class="container">
-            <div class="rsvp">
-              <div class="call">
-                <span>Don’t Strike Out!</span>
-
-              </div>
-              <div class="img">
-                <a href="https://www.eventbrite.com/e/rock-bowl-with-ktl-solutions-fascor-and-stock-iq-tickets-48040440250"><img src="./resources/images/RSVP@72x.png" alt="RSVP"></a>
-
-              </div>
-            </div>
-
-
-          </div>
-          <!-- Where and When -->
-          <div class="container">
-            <div class="box">
-              <div class="floating-box">
-                <div class="where-when">
-                  <h2>Where</h2>
-                  <div class="info">
-                    <h4>Lucky Strike</h4>
-                    <p>50W Jefferson St #240,<br> Phoenix, AZ 85003</p>
-                  </div>
-
-                </div>
-                <div class="where-when">
-                  <h2>When</h2>
-                  <div class="info">
-                    <h4>Wed. October 17, 2018</h4>
-                    <p>6:30 - 9:30 PM MST</p>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <!-- Sponsors -->
-          <div class="footer">
-            <div class="gpug">
-              <a href="https://www.gpugsummit.com/home"><img class="img-full"src="./resources/images/summit red blue.svg" alt="summit logo "></a>
-
-
-            </div>
-            <div class="sponsors">
-              <div class="powered">
-                <h2>Power By:</h2>
-
-              </div>
-              <div class="logo">
-                <div class="fascor">
-                  <a href="http://fascor.com/"><img src="./resources/images/Fascor.svg" alt=""></a>
-
-
-                </div>
-                <div class="ktl">
-                  <a href="https://www.ktlsolutions.com/"><img src="./resources/images/KTL.svg" alt=""></a>
-
-
-                </div>
-                <div class="stock-iq">
-                  <a href="http://www.stockiqtech.com/"><img src="./resources/images/Stockiq.svg" alt=""></a>
-
-
-                </div>
-              </div>
 
 
       </div>
-    </div>
+      <!-- Where and When -->
+      <div class="container">
+        <div class="box">
+          <div class="floating-box">
+            <div class="where-when">
+              <h2>Where</h2>
+              <div class="info">
+                <h4>Lucky Strike</h4>
+                <p>50W Jefferson St #240,<br> Phoenix, AZ 85003</p>
+              </div>
+
+            </div>
+            <div class="where-when">
+              <h2>When</h2>
+              <div class="info">
+                <h4>Wed. October 17, 2018</h4>
+                <p>6:30 - 9:30 PM MST</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Sponsors -->
+      <div class="footer">
+        <div class="gpug">
+          <a href="https://www.gpugsummit.com/home"><img class="img-full"src="./resources/images/summit red blue.svg" alt="summit logo "></a>
 
 
-  </body>
+        </div>
+        <div class="sponsors">
+          <div class="powered">
+            <h2>Powered By:</h2>
+
+          </div>
+          <div class="logo">
+            <div class="fascor">
+              <a href="http://fascor.com/"><img src="https://i.imgur.com/HaN2M36.png" alt=""></a>
+
+
+            </div>
+            <div class="ktl">
+              <a href="https://www.ktlsolutions.com/"><img src="https://i.imgur.com/UJl1NDP.png" alt=""></a>
+
+
+            </div>
+            <div class="stock-iq">
+              <a href="http://www.stockiqtech.com/"><img src="https://i.imgur.com/iPGtqmV.png" alt=""></a>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+</body>
+
 </html>
